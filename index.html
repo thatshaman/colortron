@@ -1,44 +1,38 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Colortron by thatshaman</title>
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.6.1/spectrum.min.css">
+<link rel="stylesheet" type="text/css" href="https://d1h9a8s8eodvjz.cloudfront.net/fonts/menomonia/08-02-12/menomonia.css">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Colortron</h1>
-        <p>Colortron 5000</p>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.6.1/spectrum.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+<script src="https://raw.githubusercontent.com/thatshaman/colortron/master/app.js"></script>
+<style>
+.dye {
+    color: #ffffff;
+    text-shadow: 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+    height: 38px;
+    width: 300px;
+    padding: 10px;
+    border: solid 1px #000000;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 11pt;
+    cursor: pointer;
+    margin: 3px;
+}
 
-        <p class="view"><a href="https://github.com/thatshaman/colortron">View the Project on GitHub <small>thatshaman/colortron</small></a></p>
+body {
+    font-family: menomonia;
+}
+</style>
+</head>
 
-
-        <ul>
-          <li><a href="https://github.com/thatshaman/colortron/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/thatshaman/colortron/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/thatshaman/colortron">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="colortron" class="anchor" href="#colortron" aria-hidden="true"><span class="octicon octicon-link"></span></a>colortron</h1>
-
-<p>Colortron 5000</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/thatshaman">thatshaman</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+<body>
+<b>Usage</b>: Select a color below or double click one of the dyes in the list.
+<div id="outputDiv" style="float: left; margin: 10px"></div>
+<div style="float: left; margin: 10px">
+    <input type='text' id="picker" value='#eef7f1' />
+</div>
+</body>
 </html>
